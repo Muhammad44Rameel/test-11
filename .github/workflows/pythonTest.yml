@@ -21,16 +21,16 @@ jobs:
 
       - name: Run Test Case 1 for ten numbers
         run: |
-          python find_lowest_number.py test1_input.txt test1_expected.txt
+          python find_lowest_number.py test1_input.txt test1_output.txt
           diff test1_output.txt test1_expected.txt
 
       - name: Run Test case 2 for one number
         run: |
-          python find_lowest_number.py test2_input.txt test2_expected.txt
+          python find_lowest_number.py test2_input.txt test2_output.txt
           diff test2_output.txt test2_expected.txt
 
       - name: Run Test case 3 for blank
         run: |
-          python find_lowest_number.py test3_input.txt test3_expected.txt
+          python find_lowest_number.py test3_input.txt test3_output.txt
           diff test3_output.txt test3_expected.txt
           
