@@ -4,8 +4,8 @@ on:
   - push
 
 jobs:
-  find_lowest_number:
-    name: Run Python Script
+  test_lowest_number:
+    name: Test Python Script
     runs-on: ubuntu-latest
 
     steps:
@@ -19,6 +19,15 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Run script
+      - name: Run Test Case 1 for ten numbers
         run: |
-          python find_lowest_number.py numbers.txt output.txt
+          python find_lowest_number.py test1_input.txt test1_expected.txt
+          diff test1_output.txt test1_expected.txt
+
+      - name: Run Test case 2 for one number
+        run: |
+          python find_lowest_number.py test2_input.txt test2_expected.txt
+
+      - name: Run Test case 3 for blank
+        run: |
+          python find_lowest_number.py test2_input.txt test2_expected.txt
