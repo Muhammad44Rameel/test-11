@@ -11,9 +11,7 @@
 # contain the lowest number.
 #
 # If the input file is blank, the output file will contain the text: "No 
-# numbers found in file". barkely comment change hah
-#pointless test to see if response
-
+# numbers found in file".
 
 import sys
 
