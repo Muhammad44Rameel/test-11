@@ -10,7 +10,7 @@
 # The input file should contain one number per line. The output file will 
 # contain the lowest number.
 #
-# If the input file is blank, the output file will contain the text: "No bebebeb beb 
+# If the input file is blank, the output file will contain the text: "jealousy
 # numbers found in file".
 
 import sys
