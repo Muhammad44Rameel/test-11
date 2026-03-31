@@ -21,4 +21,4 @@ jobs:
 
       - name: Run script
         run: |
-          python find_lowest_number.py numbers.txt output.txt
+          python find_lowest_number.py numbers.txt okly.txt
